@@ -1,9 +1,9 @@
 import React from 'react';
-// require('./style.sass');
-require('./css/style');
+require('./sass/style.scss');
+
 class App extends React.Component {
    render() {
-      return (<div className="center">
+      return (<div className="app">
             Hello World!!!
          </div>);
    }

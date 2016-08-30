@@ -1,0 +1,6 @@
+/*sass --watch sass\ie.scss:css\ie.css --sourcemap=none --style compressed*/
+
+@import 'variables/color';
+
+@import 'device/_desktop-ie';
+@import 'device/_ie-specific'

@@ -1,0 +1,147 @@
+.buy-box-title {
+    font-size: 17px;
+    line-height: 27px;
+}
+.buy-box-hide {
+    display: block;
+}
+.buy-box-show {
+    display: none;
+}
+.buy-box.product-variant-container .buy-box-hide {
+    display: none;
+}
+.buy-box.product-variant-container .buy-box-show {
+    display: block;
+}
+.buy-box.product-variant-container {
+    text-align: center;
+    font-family: 'tesco';
+}
+.buy-box.product-variant-container .add-to-basket-container ,
+.buy-box.product-variant-container .worth-points {
+    padding: 0 25px 10px 25px;
+
+}
+.buy-box.product-variant-container .add-to-basket-container .add-to-basket {
+    width: 190px;
+    margin: 0 auto;
+    background: #00559a;
+    border-radius: 40px;
+}
+.buy-box.product-variant-container .add-to-basket-container .add-to-basket span{
+    background: none;
+    padding: 11px 0;
+    font-size: 14px;
+}
+.product-variant-container.buy-box .calculator-txt {
+    height: 0;
+    overflow: hidden;
+    border-top: 1px solid #ededed;
+}
+.worth-points .voucher-value-container::before,
+.worth-points .voucher-value-container::after{
+    content: "";
+    display: block;
+    height: 0;
+    border-top: 1px dashed #ccc;
+    width: 80%;
+    margin: 8px auto;
+}
+.worth-points .voucher-value-container::after{
+    margin-top: 20px;
+}
+.worth-points .light-text {
+    font-size: 12px;
+    color: #717171;
+}
+.worth-points .voucher-value {
+    font-size: 3em;
+    line-height: 1em;
+    display: inline-block;
+    vertical-align: middle;
+}
+.product-variant-container.buy-box .product-variant-controls {
+    margin-right: 0;
+    padding: 20px 0;
+}
+.buy-box.product-variant-container .value-calculator {
+    width: auto;
+}
+.buy-box.product-variant-container .value-calculator,
+.buy-box.product-variant-container .product-variant-form .pdp_quantity {
+    margin-bottom: 2px;
+}
+.buy-box.product-variant-container .value-calculator .inner {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.buy-box.product-variant-container .value-calculator .inner *{
+    float: none;
+}
+.buy-box.product-variant-container .value-calculator .inner {
+    float: none;
+    border: 0;
+    padding-top: 16px;
+    padding-bottom: 10px;
+}
+.buy-box.product-variant-container .value-calculator .inner .addition,
+.buy-box.product-variant-container .value-calculator .inner .subtract {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background: #00539f;
+    border-radius: 50%;
+    vertical-align: middle;
+    text-decoration: none;
+}
+
+.buy-box.product-variant-container .value-calculator .inner .addition.disabled::after,
+.buy-box.product-variant-container .value-calculator .inner .subtract.disabled::after {
+    color: #333;
+}
+
+.buy-box.product-variant-container .value-calculator .inner .addition.disabled,
+.buy-box.product-variant-container .value-calculator .inner .subtract.disabled {
+    background: #ccc;
+}
+
+.buy-box.product-variant-container .value-calculator .inner .addition::after,
+.buy-box.product-variant-container .value-calculator .inner .subtract::after {
+    color: white;
+    display: block;
+    vertical-align: middle;
+    line-height: 32px;
+    text-indent: 0;
+    text-align: center;
+    font-size: 20px;
+}
+.buy-box.product-variant-container .value-calculator .inner .addition::after {
+    content: "+";
+}
+.buy-box.product-variant-container .value-calculator .inner .subtract::after {
+    content: "-";
+}
+
+.buy-box.product-variant-container .value-calculator .inner span.quantity-container {
+    position: relative;
+    font-family: 'tesco';
+}
+.buy-box.product-variant-container .value-calculator .inner span.quantity-container::after {
+    display: block;
+    position: absolute;
+    left: 24px;
+    top: 2px;
+    height: 100%;
+    content: "\00a3";
+    font-size: 16px;
+}
+.buy-box.product-variant-container .value-calculator .inner .quantity {
+    height: 27px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 35px;
+    min-width: 83px;
+    font-size: 16px;
+    padding-left: 16px;
+}

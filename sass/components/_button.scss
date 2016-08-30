@@ -1,0 +1,19 @@
+.add-to-basket {
+	background: #ed1c24;
+	display: block;
+	padding: 0 40px;
+	width: 100%
+}
+
+.add-to-basket span {
+	background: url(../img/interface/btn-add-to-basket.png) 0 7px no-repeat;
+	color: $whiteColor;
+	display: block;
+	font-size: 16px;
+	line-height: 1;
+	padding: 12px 0 10px 30px
+}
+
+.add-to-basket:focus,.add-to-basket:hover, .add-to-basket:active {
+	background: #cc181f
+}

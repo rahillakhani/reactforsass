@@ -1,0 +1,137 @@
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  max-height: 1000000px;
+  -webkit-print-color-adjust: exact;
+
+  & * {
+    max-height: 1000000px;
+  }
+}
+html,body {
+  overflow-x: hidden
+}
+html, button, input, select, textarea {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+select, textarea {
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  -webkit-border-radius: 0;
+  border: 1px solid #d0d0d0;
+  border-radius: 0;
+}
+
+input {
+  &[type="text"], &[type="password"], &[type="datetime"], &[type="datetime-local"], &[type="date"], &[type="month"], &[type="time"], &[type="week"], &[type="number"], &[type="email"], &[type="url"], &[type="search"], &[type="tel"], &[type="color"] {
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    -webkit-border-radius: 0;
+    border: 1px solid #d0d0d0;
+    border-radius: 0;
+  }
+  &[type="text"].invalid, &[type="password"].invalid, &[type="datetime"].invalid, &[type="datetime-local"].invalid, &[type="date"].invalid, &[type="month"].invalid, &[type="time"].invalid, &[type="week"].invalid, &[type="number"].invalid, &[type="email"].invalid, &[type="url"].invalid, &[type="search"].invalid, &[type="tel"].invalid, &[type="color"].invalid {
+    border: 1px solid red;
+  }
+}
+
+input, textarea {
+  color: #000;
+}
+
+ul, ol {
+  margin: 0 0 9px 15px;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: list-item;
+  line-height: 18px;
+}
+
+dl {
+  margin-bottom: 18px;
+}
+
+dt, dd {
+  line-height: 18px;
+}
+
+dt {
+  font-weight: 700;
+  line-height: 17px;
+}
+
+dd {
+  margin: 0 0 20px 9px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+  margin: 0 0 10px;
+  text-rendering: optimizelegibility;
+  vertical-align: baseline;
+}
+
+h1, h2, h4 {
+  -webkit-font-smoothing: antialiased;
+  font-family: tesco, "Helvetica Neue", Arial, sans-serif;
+}
+
+a {
+  color: #00539f;
+  &:focus, &:hover, &:active {
+    color: #1c4a75;
+  }
+}
+
+
+ul {
+  ul, ol {
+    margin-bottom: 0;
+  }
+}
+
+ol {
+  ol, ul {
+    margin-bottom: 0;
+  }
+}
+
+nav {
+  ul, ol {
+    list-style: none;
+    list-style-image: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+h4, h5, h6 {
+  margin: 0 0 5px;
+}
+
+body, p, label, li, h6 {
+  font-size: 14px;
+  line-height: 17px;
+}
+
+h6 {
+  font-weight: 700;
+}
+
+::-moz-selection, ::selection {
+  background: #06f;
+  color: $whiteColor;
+  text-shadow: none;
+}

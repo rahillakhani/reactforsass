@@ -1,0 +1,10 @@
+/*sass --watch sass\style.scss:css\style.css --sourcemap=none --style compressed*/
+@import 'variables/color';
+@import 'common/base';
+@import 'common/boost';
+@import 'device/mobile';
+@import 'device/tablet';
+@import 'device/desktop';
+
+@import 'components/_button.scss';
+@import 'module/buybox';

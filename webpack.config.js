@@ -32,7 +32,7 @@ var config = {
          test: /\.scss$/,
          exclude: /node_modules/,
          loader: ExtractTextPlugin.extract("style-loader",sassLoaders.join('!')),
-         root: path.resolve('./css/')
+         root: path.resolve('./sass/')
       }]
    },
    plugins: [
