@@ -1,6 +1,6 @@
 import React from 'react';
 // require('./style.sass');
-require('./style.scss');
+require('./css/style');
 class App extends React.Component {
    render() {
       return (<div className="center">

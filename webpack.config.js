@@ -1,4 +1,9 @@
+var ExtractTextPlugin = require("extract-text-webpack-plugin");
 const path = require('path');
+const sassLoaders = [
+ 'css-loader',
+ 'sass-loader'
+]
 
 var config = {
    entry: './main.js',
@@ -8,7 +13,10 @@ var config = {
    },
    devServer: {
       inline: true,
-      port: 8080
+      port: 8110
+   },
+   resolve: {
+      extensions: ['', '.js', '.jsx', '.scss'],
    },
    module: {
       loaders: [
@@ -23,9 +31,15 @@ var config = {
       {
          test: /\.scss$/,
          exclude: /node_modules/,
-         loaders: ["style", "sass", "scss"],
+         loader: ExtractTextPlugin.extract("style-loader",sassLoaders.join('!')),
+         root: path.resolve('./css/')
       }]
-   }
+   },
+   plugins: [
+        new ExtractTextPlugin("./css/style.css", {
+            allChunks: true
+        })
+   ]
 }
 
 module.exports = config;
