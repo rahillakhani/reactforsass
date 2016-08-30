@@ -1,31 +1,31 @@
-const path = require('path');
+var ExtractTextPlugin = require("extract-text-webpack-plugin");
+const path = require('path')
+const sassLoaders = [
+ 'css-loader',
+ 'sass-loader'
+]
+module.exports = {
+    // The standard entry point and output config
+    entry: {
+        main: "./main.js",
+    },
+    output: {
+        filename: "./assets/[name].js",
+        chunkFilename: "./assets/[id].js"
+    },
+    module: {
+        loaders: [
+            {
+                test: /\.scss$/,
+                loader: ExtractTextPlugin.extract("style-loader",sassLoaders.join('!'))
+            }
+        ]
+    },
+    // Use the plugin to specify the resulting filename (and add needed behavior to the compiler)
+    plugins: [
+        new ExtractTextPlugin("./bundle.css", {
+            allChunks: true
+        })
 
-var config = {
-   entry: './main.js',
-   output: {
-      path:'./',
-      filename: 'index.js'
-   },
-   devServer: {
-      inline: true,
-      port: 8080
-   },
-   module: {
-      loaders: [
-      {
-         test: /\.jsx?$/,
-         exclude: /node_modules/,
-         loader: 'babel',
-         query: {
-            presets: ['es2015', 'react']
-         }
-      },
-      {
-         test: /\.scss$/,
-         exclude: /node_modules/,
-         loaders: ["style", "sass", "scss"],
-      }]
-   }
+    ]
 }
-
-module.exports = config;
